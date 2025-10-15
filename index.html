@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Marmoraria R & M</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+            <img id="logo" src="assets/logo-marmoraria-fundo-transparente.png" alt="Logo Marmoraria R & M">
+            <nav class="navegacao">
+                <a href="#">Home</a>
+                <a href="#">Ambientes</a>
+                <a href="#">Materiais</a>
+                <a href="#">Contato</a>
+                <a href="https://wa.me/5537998327615" class="botao-agendar">AGENDAR ATENDIMENTO</a>
+            </nav>
+            <button id="botao-menu-mobile" class="botao-menu-mobile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </div>
+        <div id="menu-mobile" class="menu-mobile container">
+            <a href="#">Home</a>
+            <a href="#">Ambientes</a>
+            <a href="#">Materiais</a>
+            <a href="#">Contato</a>
+            <a href="https://wa.me/5537998327615" class="botao-agendar">AGENDAR ATENDIMENTO</a>
+        </div>
+    </header>
+
+    <main class="container conteudo-principal">
+        
+        <section class="secao-galeria">
+            <div class="galeria-cabecalho">
+                <h1 id="titulo-galeria">Todos os Materiais</h1>
+                <button id="botao-abrir-filtros" class="botao-abrir-filtros">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
+                    <span>Filtrar</span>
+                </button>
+            </div>
+            <div id="grade-rochas">
+                <!-- Cards das rochas serão inseridos aqui -->
+            </div>
+        </section>
+
+    </main>
+
+    <div id="sobreposicao-filtros" class="sobreposicao-filtros"></div>
+
+    <aside id="barra-lateral-filtros" class="barra-lateral-filtros">
+        <div class="filtros-cabecalho">
+            <h3>Filtros</h3>
+            <button id="botao-fechar-filtros" class="botao-fechar-filtros">&times;</button>
+        </div>
+        <div class="grupo-filtro">
+            <label for="caixa-busca">Buscar por nome</label>
+            <input type="text" id="caixa-busca" placeholder="Ex: Branco Dallas">
+        </div>
+        <div id="filtros-categoria" class="grupo-filtro">
+            <h4 class="sr-only">Categorias</h4>
+            <button class="botao-filtro ativo" data-categoria="all">Todas</button>
+            <button class="botao-filtro" data-categoria="Granito">Granitos</button>
+            <button class="botao-filtro" data-categoria="Mármore">Mármores</button>
+            <button class="botao-filtro" data-categoria="Quartzito">Quartzitos</button>
+            <button class="botao-filtro" data-categoria="Quartzo">Quartzo</button>
+        </div>
+    </aside>
+
+    <div id="modal" class="modal">
+        <div id="modal-conteudo" class="modal-conteudo">
+            <!-- Conteúdo do modal será inserido aqui -->
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
