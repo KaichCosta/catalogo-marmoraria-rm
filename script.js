@@ -62,6 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const abrirModal = (idDaRocha) => {
         const rochaEncontrada = rochas.find(rocha => rocha.id === idDaRocha);
         if (!rochaEncontrada) return; // Se não achar a rocha, não faz nada
+        
+        const linkWhatsapp = `https://wa.me/5537998327615?text=Olá!%20Gostaria%20de%20um%20orçamento%20de%20${encodeURIComponent(rochaEncontrada.nome)}%20para%20minha%20obra.`;
 
         modalConteudo.innerHTML = `
             <div class="modal-imagem">
@@ -73,9 +75,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     <h2>${rochaEncontrada.nome}</h2>
                     <p>${rochaEncontrada.descricao}</p>
                 </div>
-                <button class="botao-solicitar">Solicitar Orçamento</button>
+                <a href="${linkWhatsapp}" target="_blank" rel="noopener noreferrer" class="botao-solicitar">Solicitar Orçamento</a>
             </div>
-            <button id="botao-fechar-modal" class="botao-fechar-modal">
+            <button  id="botao-fechar-modal" class="botao-fechar-modal">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
             </button>
         `;
