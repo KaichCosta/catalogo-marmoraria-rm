@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #fdfdfd;
@@ -101,8 +105,6 @@ a.botao-agendar:hover {
     width: 200px;
 
 }
-
-
 
 .conteudo-principal {
 
@@ -204,7 +206,7 @@ a.botao-agendar:hover {
 
 
 /* --- Galeria de Produtos --- */
-.secao-galeria {
+#secao-galeria {
     width: 100%; /* Ocupa toda a largura */
 }
 
