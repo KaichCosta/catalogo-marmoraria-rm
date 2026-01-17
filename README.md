@@ -3,7 +3,7 @@
 ## 📄 Descrição
 Este projeto é uma aplicação web de página única (SPA) desenvolvida para exibir um catálogo interativo de rochas ornamentais, como granitos, mármores e quartzitos. A interface foi criada com foco em um design limpo, moderno e totalmente responsivo, utilizando apenas HTML, CSS puro e JavaScript.
 
-É um projeto de estudo focado em praticar a manipulação do DOM, a criação de layouts responsivos com CSS e a implementação de funcionalidades dinâmicas com JavaScript.
+É um projeto usado pela Marmoraria R & M, feito como uma versão MVP.
 
 ## ✨ Funcionalidades
 * **Galeria Dinâmica:** Exibição dos produtos em uma grade responsiva.
